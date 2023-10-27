@@ -1,19 +1,11 @@
-import {View, Text, Image, TextInput} from 'react-native';
+import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const detail = () => {
+const Detail = (Navigation) => {
   return (
     <View>
       <View>
-        <Image
-          source={require('../icon/balek.png')}
-          style={{
-            marginTop: 24,
-            marginHorizontal: 24,
-            marginRight: 10,
-            justifyContent: 'center',
-          }}
-        />
+        <View></View>
         <View
           style={{
             justifyContent: 'space-between',
@@ -24,7 +16,7 @@ const detail = () => {
           <Image
             source={require('../assets/image/burgernew.jpg')}
             style={{
-              height: 400,
+              height: 350,
               width: 430,
               borderRadius: 10,
               marginHorizontal: 25,
@@ -105,12 +97,13 @@ const detail = () => {
           style={{
             borderWidth: 1,
             color: '#EEEEEE',
-            marginTop: 20,
+            marginTop: 30,
             marginHorizontal: 24,
           }}
         />
       </View>
       <View>
+      <TouchableOpacity onPress={() => navigation.navigate('Detail')}>
         <Text
           style={{
             backgroundColor: '#CF0A0A',
@@ -122,7 +115,7 @@ const detail = () => {
             flexDirection: 'row',
             paddingRight: 16,
             paddingLeft: 16,
-            marginTop: 16,
+            marginTop: 60,
             marginHorizontal: 24,
             color: 'white',
             paddingVertical: 15,
@@ -130,10 +123,19 @@ const detail = () => {
             marginTop: 40,
           }}>
           Konfirmasi Pemesanan
+          
         </Text>
+        <Text
+          style={{
+            textAlign: 'center',
+            marginTop: '34',
+            color: '#A4A4A4',
+            fontSize: 14,
+            marginTop: 100,
+          }}> create by : anasera</Text>
       </View>
     </View>
   );
 };
 
-export default detail;
+export default Detail;

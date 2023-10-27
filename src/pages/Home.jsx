@@ -173,8 +173,6 @@ const Home = ({navigation}) => {
         }}>
         Created By :Anasera
       </Text>
-      <Text
-        style={{textAlign: 'center', color: '#A4A4A4', fontSize: 14}}></Text>
     </View>
   );
 };
